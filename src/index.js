@@ -1,3 +1,3 @@
-export default () => {
-  console.log('')
+export default (request) => {
+  console.log(request)
 }

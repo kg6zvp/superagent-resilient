@@ -26,11 +26,12 @@
 		"clean": "rimraf dist",
 		"lint": "eslint src test",
 		"lint:fix": "eslint src test --fix",
-		"test": "npm run lint && mocha --require babel-register --recursive --reporter spec"
+		"test": "npm run lint && mocha --require babel-register --require babel-polyfill --recursive --reporter spec"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.4.0",
 		"babel-core": "^6.4.0",
+		"babel-polyfill": "^6.4.0",
 		"babel-eslint": "^10.0.0",
 		"babel-plugin-add-module-exports": "^1.0.0",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",

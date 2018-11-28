@@ -26,7 +26,7 @@
 		"clean": "rimraf dist",
 		"lint": "eslint src test",
 		"lint:fix": "eslint src test --fix",
-		"test": "npm run lint && mocha --require babel-register --require babel-polyfill --recursive --reporter spec"
+		"test": "mocha --require babel-register --require babel-polyfill --recursive --reporter spec"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.4.0",
@@ -38,6 +38,8 @@
 		"babel-plugin-transform-runtime": "^6.4.3",
 		"babel-preset-env": "^1.7.0",
 		"babel-register": "^6.26.0",
+		"express": "^4.16.3",
+		"get-port": "^4.0.0",
 		"eslint": "^5.0.0",
 		"eslint-cli": "^1.0.0",
 		"eslint-plugin-babel": "^5.1.0",
